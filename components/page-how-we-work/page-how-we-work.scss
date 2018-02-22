@@ -1,0 +1,32 @@
+@import "~styles/settings";
+.page-how-we-work {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    &__box {
+        &-heading {
+            font-size: 30px;
+            font-weight: 200;
+            text-align: center;
+            color: $sky-blue;
+            @include breakpoint(medium) {
+                text-align: left;
+                font-size: 40px;
+                color: $heavy-violet;
+            }
+        }
+        &-text {
+            margin: 1.5rem 0 2rem;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.7;
+            text-align: center;
+            color: $duck-egg-blue;
+            @include breakpoint(medium) {
+                text-align: left;
+                font-size: 16px;
+                line-height: 1.63;
+                color: $duck-egg-blue-two;
+            }
+        }
+    }
+}

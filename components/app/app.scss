@@ -1,0 +1,9 @@
+@import '~styles/settings';
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-xy-grid-classes;
+@include foundation-flex-classes;
+@include foundation-menu;
+.app {
+    background-color: $dark-slate-blue;
+}

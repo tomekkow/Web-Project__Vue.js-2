@@ -1,0 +1,49 @@
+@import "~styles/settings";
+.page-header {
+    @include xy-grid-container;
+    background-color: $dark-slate-blue;
+    padding-top: 1rem;
+    &__logo {
+        width: 140px;
+    }
+    &__menu {
+        display: block;
+        width: 64px;
+        height: 48px;
+        background-color: #ae86fe;
+        border-radius: 24px;
+        background-image: url("/src/assets/img/menu.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: none;
+    }
+    &__divider {
+        margin-top: 1rem;
+        height: 1px;
+        opacity: 0.2;
+        background-image: linear-gradient(to left, #4ff3fe, #f436ff);
+    }
+    &__menu-list {
+        &-item {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+    &--hide {
+        display: none;
+    }
+    &--show-small {
+        @include breakpoint(small only) {
+            display: block;
+        }
+    }
+    &--show-medium {
+        @include breakpoint(medium) {
+            display: block;
+        }
+    }
+}

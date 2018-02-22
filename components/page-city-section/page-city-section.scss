@@ -1,0 +1,102 @@
+@import "~styles/settings";
+.page-city-section {
+    &__title {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.7;
+        text-align: center;
+        color: #caf3f5;
+        position: relative;
+        &-header {
+            display: block;
+            font-size: 30px;
+            font-weight: 200;
+            line-height: 1.33;
+            color: #70ccfe;
+            margin: 1rem 0;
+            @include breakpoint(medium) {
+                font-size: 40px;
+                text-align: left;
+                transform: translateY(320%);
+            }
+        }
+        &-text {
+            @include breakpoint(medium) {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 1.63;
+                text-align: left;
+                max-width: 580px;
+                transform: translateY(220%)
+            }
+        }
+        &-image {
+            max-width: 100%;
+            margin-left: -5%;
+        }
+    }
+    &__text-section {
+        text-align: center;
+        margin-bottom: 1rem;
+        // background-color: $dark-slate-blue;
+        @include breakpoint(medium) {
+            margin-bottom: 2rem;
+            // transform: translateY(-110%);
+        }
+        &-tectonic-icon {
+            width: 80px;
+            height: 64px;
+            margin-bottom: 2rem;
+            @include breakpoint(medium) {
+                margin-bottom: 4rem;
+                width: 160px;
+                height: 128px;
+            }
+        }
+        &-neonbox-icon {
+            width: 70px;
+            height: 64px;
+            margin-bottom: 2rem;
+            margin-top: 4rem;
+            @include breakpoint(medium) {
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 4rem;
+                width: 141.3px;
+                height: 127.8px;
+            }
+        }
+        &--heading {
+            font-size: 24px;
+            font-weight: 200;
+            line-height: 1.33;
+            color: #96e2e7;
+            @include breakpoint(medium) {
+                text-align: left;
+                font-size: 28px;
+            }
+        }
+        &--small {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.7;
+            color: #caf3f5;
+            @include breakpoint(medium) {
+                text-align: left;
+                font-size: 16px;
+                line-height: 1.63;
+            }
+        }
+        &--bold {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #d0fcff;
+            @include breakpoint(medium) {
+                text-align: left;
+                font-size: 20px;
+                line-height: 1.4;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import "~styles/settings";
+.section-hello-buttons {
+    @include xy-grid-container;
+    padding-bottom: 1rem;
+    &__grid-x {
+        @include flex-align(center);
+        @include breakpoint(large) {
+            @include flex-align(justify);
+        }
+    }
+    &__btn {
+        display: block;
+        width: 150px;
+        height: 48px;
+        background-color: #59e9fe;
+        border-radius: 24px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: #171542;
+        text-decoration: none;
+        margin-bottom: 1rem;
+        outline: none;
+        @include breakpoint(large) {
+            margin-bottom: 0;
+        }
+        &--blue {
+            background-color: #59e9fe;
+        }
+        &--pink {
+            background-color: #ae86fe;
+        }
+    }
+    &__music {
+        text-align: center;
+        font-size: 10px;
+        color: #6861ca;
+        @include breakpoint(large) {
+            text-align: right;
+            font-size: 12px;
+        }
+    }
+    &__cassette {
+        width: 64px;
+        height: 48px;
+        border-radius: 24px;
+        background-color: #ae86fe;
+        display: none;
+        @include breakpoint(large) {
+            display: block;
+            text-align: right;
+            font-size: 12px;
+            padding-top: 7px;
+            padding-right: 2px;
+            text-align: center;
+        }
+    }
+}

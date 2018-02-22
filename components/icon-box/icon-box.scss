@@ -1,0 +1,75 @@
+@import "~styles/settings";
+.icon-box {
+    text-align: center;
+    @include breakpoint(medium) {
+        text-align: left;
+    }
+    &__section {
+        &-vertical-line {
+            position: relative;
+            padding-left: 20px;
+            &::before,
+            &:nth-child(3)::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                left: 17px;
+                width: 1px;
+                height: 338px;
+                background-color: rgba(121, 126, 255, 0.2);
+                margin-left: -15px;
+            }
+            &:nth-child(3)::after {
+                left: 400px;
+            }
+        }
+        &-image {
+            margin: 0 auto;
+            width: 80px;
+            height: 60px;
+            @include breakpoint(medium) {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        &-title {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: $really-light-blue;
+            @include breakpoint(medium) {
+                font-size: 28px;
+                color: $light-teal;
+                font-weight: 200;
+                line-height: 1.14;
+            }
+        }
+        &-text {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.7;
+            color: $duck-egg-blue;
+            margin-bottom: 4rem;
+            @include breakpoint(medium) {
+                font-size: 16px;
+                line-height: 1.63;
+                color: $duck-egg-blue-two;
+            }
+        }
+    }
+}
+
+.wider-image {
+    width: 110px;
+    @include breakpoint(medium) {
+        width: 200px;
+    }
+}
+
+.hide-image {
+    display: none;
+}

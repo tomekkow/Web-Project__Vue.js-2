@@ -1,0 +1,75 @@
+@import "~styles/settings";
+
+.section-hello {
+  margin: -30px auto 0;
+  max-width: 1600px;
+  height: 370px;
+  background-image: url("~assets/img/office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 77% 0;
+
+  @include breakpoint(medium) {
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 600px;
+  }
+  @include breakpoint(large) {
+    height: 800px;
+  }
+
+  &--hide {
+    display: none;
+  }
+
+  &--show-small {
+    text-align: center;
+
+    @include breakpoint(small only) {
+      display: block;
+    }
+  }
+
+  &--show-medium {
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+
+  &__hi {
+    padding-top: 1rem;
+    font-weight: 200;
+    font-size: 20px;
+    color: $light-teal;
+
+    span {
+      display: block;
+      font-size: 30px;
+      line-height: 0.8;
+    }
+
+    @include breakpoint(medium) {
+      padding-top: 6rem;
+      font-size: 45px;
+
+      span {
+        font-size: 55px;
+      }
+    }
+  }
+
+  &__message {
+    padding-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #caf3f5;
+
+    @include breakpoint(medium) {
+      padding-top: 1rem;
+      max-width: 350px;
+    }
+  }
+}

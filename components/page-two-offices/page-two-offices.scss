@@ -1,0 +1,119 @@
+@import "~styles/settings";
+.page-two-offices {
+    padding-top: 2rem;
+    @include breakpoint(medium) {
+        padding-top: 20rem;
+    }
+    &__intro {
+        @include breakpoint(medium) {
+            max-width: 580px;
+        }
+        &-heading {
+            font-size: 30px;
+            font-weight: 200;
+            text-align: center;
+            color: $sky-blue;
+            @include breakpoint(medium) {
+                text-align: left;
+                font-size: 40px;
+                color: $violet-pink;
+            }
+        }
+        &-text {
+            margin: 1.5rem 0 2rem;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.7;
+            text-align: center;
+            color: $duck-egg-blue;
+            @include breakpoint(medium) {
+                text-align: left;
+                font-size: 16px;
+                color: $duck-egg-blue-two;
+            }
+        }
+    }
+    &__box {
+        padding: 1rem 0 2rem;
+        background-color: $dark-blue-grey-two;
+        margin-bottom: 20px;
+        text-align: center;
+        @include breakpoint(medium) {
+            text-align: left;
+            padding: 1rem 0 2rem 2rem;
+        }
+        &-text-bold {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: $really-light-blue;
+            margin-bottom: 1rem;
+            @include breakpoint(medium) {
+                font-size: 20px;
+            }
+        }
+        &-text-normal {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.7;
+            color: $duck-egg-blue;
+            @include breakpoint(medium) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__section {
+        padding: 1rem 0 2rem;
+        text-align: center;
+        background-color: $dark-blue-grey-two;
+        @include breakpoint(medium) {
+            text-align: left;
+            padding: 1rem 0 2rem 2rem;
+        }
+        &-text-bold {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: $really-light-blue;
+            margin-bottom: 1rem;
+            @include breakpoint(medium) {
+                font-size: 20px;
+            }
+        }
+        &-text-normal {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.7;
+            color: $duck-egg-blue;
+            @include breakpoint(medium) {
+                font-size: 16px;
+            }
+        }
+        &-company {
+            margin-top: 2rem;
+            @include breakpoint(medium) {
+                margin-top: 0;
+                text-align: left;
+            }
+            &-text-bold {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1.5;
+                color: $really-light-blue;
+                margin-bottom: 1rem;
+                @include breakpoint(medium) {
+                    font-size: 20px;
+                }
+            }
+            &-text-normal {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.7;
+                color: $duck-egg-blue;
+                @include breakpoint(medium) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

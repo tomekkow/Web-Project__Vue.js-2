@@ -1,0 +1,48 @@
+@import "~styles/settings";
+.case-card {
+    @include breakpoint(medium) {
+        transform: translateY(-50%);
+    }
+    // @include xy-grid-container;
+    position: relative;
+    &__image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    &__text {
+        margin-top: 1.5rem;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 1.33;
+        color: $light-teal;
+        span {
+            display: block;
+        }
+    }
+    &__button {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translate(-50%);
+        display: block;
+        width: 150px;
+        height: 48px;
+        background-color: #ae86fe;
+        border-radius: 24px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: $dark-blue-grey;
+        text-decoration: none;
+        outline: none;
+        @include breakpoint(medium) {
+            left: 40px;
+        }
+    }
+}

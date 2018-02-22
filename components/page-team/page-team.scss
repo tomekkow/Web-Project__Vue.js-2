@@ -1,0 +1,31 @@
+@import "~styles/settings";
+.page-team {
+    &__heading {
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 1.33;
+        text-align: center;
+        color: #a095fe;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        @include breakpoint(medium) {
+            text-align: left;
+            font-size: 40px;
+            margin-top: 13.750rem;
+        }
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.7;
+        text-align: center;
+        color: #caf3f6;
+        margin-bottom: 2rem;
+        @include breakpoint(medium) {
+            text-align: left;
+            max-width: 580px;
+            font-size: 16px;
+            line-height: 1.63;
+        }
+    }
+}

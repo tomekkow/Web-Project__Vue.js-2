@@ -1,0 +1,37 @@
+@import "~styles/settings";
+.person-card {
+    position: relative;
+    &__name {
+        position: absolute;
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 1.33;
+        text-align: center;
+        color: #96e2e7;
+        width: 100%;
+        top: 1.6rem;
+    }
+    &__position {
+        display: block;
+        font-size: 18px;
+        line-height: 1.78;
+    }
+    &__image {
+        width: 100%;
+    }
+    &__button {
+        text-transform: uppercase;
+        position: absolute;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: normal;
+        text-align: center;
+        color: #171542;
+        width: 144px;
+        height: 48px;
+        border-radius: 24px;
+        background-color: #ae86fe;
+        bottom: 2rem;
+        left: 2rem;
+    }
+}

@@ -1,0 +1,48 @@
+@import "~styles/settings";
+.page-our-expertise {
+    margin-top: 3rem;
+    @include breakpoint(medium) {
+        margin-top: -15rem;
+    }
+    &__image {
+        margin-left: -30%;
+        @include breakpoint(medium) {
+            margin-left: 0;
+        }
+    }
+    &__box {
+        @include breakpoint(medium) {
+            max-width: 50%;
+            transform: translateY(100%);
+        }
+        @include breakpoint(large) {
+            max-width: 580px;
+            transform: translateY(230%);
+        }
+        &-heading {
+            font-size: 30px;
+            font-weight: 200;
+            text-align: center;
+            color: $sky-blue;
+            @include breakpoint(medium) {
+                text-align: left;
+                font-size: 40px;
+                color: $violet-pink;
+            }
+        }
+        &-text {
+            margin: 1.5rem 0 2rem;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.7;
+            text-align: center;
+            color: $duck-egg-blue;
+            @include breakpoint(medium) {
+                text-align: left;
+                line-height: 1.63;
+                font-size: 16px;
+                color: $duck-egg-blue-two;
+            }
+        }
+    }
+}

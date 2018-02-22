@@ -1,0 +1,67 @@
+@import "~styles/settings";
+.page-footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &__divider {
+        margin: 1rem 0;
+        height: 1px;
+        opacity: 0.2;
+        background-image: linear-gradient(to left, #4ff3fe, #f436ff);
+    }
+    &__text {
+        font-size: 12px;
+        text-align: center;
+        color: $really-light-blue;
+        // margin-top: 1.5rem;
+        // margin-bottom: 2rem;
+    }
+    &__box {
+        &-social {
+            width: 24px;
+            height: 24px;
+            list-style: none;
+            display: inline-block;
+            &--facebook {
+                background-image: url("~assets/img/social-fb.svg");
+            }
+            &--linkedin {
+                background-image: url("~assets/img/social-linkedin.svg");
+            }
+            &--dribbble {
+                background-image: url("~assets/img/social-dribbble.svg");
+            }
+            &--twitter {
+                background-image: url("~assets/img/social-twitter.svg");
+            }
+            &--github {
+                background-image: url("~assets/img/social-github.svg");
+            }
+        }
+    }
+    // &__box {
+    //     text-align: center;
+    //     margin-left: 0;
+    // }
+    &__social-box li {
+        display: inline-block;
+        margin-right: 35px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__button {
+        display: block;
+        width: 300px;
+        height: 48px;
+        background-color: $button-blue;
+        border-radius: 24px;
+        outline: none;
+        // margin: 2rem auto;
+        float: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $dark-blue-grey;
+        text-decoration: none;
+    }
+}

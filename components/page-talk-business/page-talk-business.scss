@@ -1,0 +1,59 @@
+@import "~styles/settings";
+.page-talk-business {
+    padding-top: 3rem;
+    overflow: hidden;
+    &__box {
+        &-heading {
+            font-size: 30px;
+            font-weight: 200;
+            text-align: center;
+            color: $sky-blue;
+            @include breakpoint(medium) {
+                font-size: 40px;
+                text-align: left;
+                color: $violet-pink;
+            }
+        }
+        &-text {
+            margin: 1.5rem 0 2rem;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.7;
+            text-align: center;
+            color: $duck-egg-blue;
+            @include breakpoint(medium) {
+                font-size: 16px;
+                text-align: left;
+                color: $duck-egg-blue-two;
+                max-width: 580px;
+            }
+        }
+        &-button {
+            display: block;
+            width: 300px;
+            height: 48px;
+            background-color: $button-blue;
+            border-radius: 24px;
+            outline: none;
+            margin: 2rem auto;
+            float: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: $dark-blue-grey;
+            text-decoration: none;
+            @include breakpoint(340px) {
+                width: 320px;
+            }
+            @include breakpoint(medium) {
+                width: 215px;
+                margin: 1rem auto;
+                float: left;
+            }
+        }
+    }
+    &__image {
+        max-width: 140%;
+        margin-left: -25%;
+    }
+}

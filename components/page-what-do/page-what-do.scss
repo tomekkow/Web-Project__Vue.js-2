@@ -1,0 +1,34 @@
+@import "~styles/settings";
+.page-what-do {
+    padding-top: 2rem;
+    &__image {
+        margin-top: 3rem;
+        @include breakpoint(medium) {
+            margin-top: 16rem;
+        }
+    }
+    &__heading {
+        font-size: 30px;
+        font-weight: 200;
+        text-align: center;
+        color: $violet;
+        margin-top: 2rem;
+        @include breakpoint(medium) {
+            font-size: 40px;
+            text-align: left;
+        }
+    }
+    &__text {
+        margin: 1.5rem 0 3rem;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.7;
+        text-align: center;
+        color: $duck-egg-blue-two;
+        @include breakpoint(medium) {
+            text-align: left;
+            font-size: 16px;
+            max-width: 580px;
+        }
+    }
+}
